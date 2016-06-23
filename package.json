@@ -1,0 +1,23 @@
+{
+  "name": "ppx_assert_lib",
+  "version": "0.0.1",
+  "description": "Assert-like extension nodes that raise useful errors on failure",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "sexplib": "git://github.com/bsansouci/sexplib.git"
+  },
+  "jengaboot": {
+    "ocamlfindDependencies": {
+      "bigarray": "*"
+    },
+    "ppxFlag": "ppx-jane -as-ppx -inline-test-lib core -inline-test-drop -bench-drop"
+  },
+  "devDependencies": {
+    "jengaboot": "git://github.com/bsansouci/jengaboot.git#tmp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsansouci/ppx_assert.git"
+  },
+  "author": "Jane Street Group, LLC <opensource@janestreet.com>"
+}
